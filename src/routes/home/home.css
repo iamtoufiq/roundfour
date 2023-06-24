@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-gap: 10px; /* Adjust the gap between the columns as needed */
+}
+.heading {
+  color: rgb(39, 39, 202);
+  margin-left: 5vw;
+}
+.left {
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myIcon {
+  font-size: 1.5rem;
+}
+.icon-name {
+  font-weight: bold;
+}
+.outer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: rgb(5, 19, 46);
+}
+.middle {
+  grid-column: 2 / 3;
+}
+
+.right {
+  grid-column: 3 / 4;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 100%;
+  }
+
+  .left,
+  .middle,
+  .right {
+    grid-column: 1 / 2;
+  }
+}

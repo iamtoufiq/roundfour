@@ -1,0 +1,11 @@
+.upper {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.lower {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
