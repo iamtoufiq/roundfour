@@ -1,6 +1,7 @@
 import React from "react";
-import "./navbar.css";
+import { NavLink } from "react-router-dom";
 import { useGlobalHook } from "../../context/Contexts";
+import "./navbar.css";
 const Navbar = () => {
   const data = useGlobalHook();
   return (
@@ -20,26 +21,9 @@ const Navbar = () => {
       </div>
 
       <div className="nav-links">
-        <a href="//github.io/jo_geek" target="_blank" rel="noreferrer">
+        <NavLink exact to="/">
           Home
-        </a>
-        <a
-          href="http://stackoverflow.com/users/4084003/"
-          rel="noreferrer"
-          target="_blank"
-        >
-          About
-        </a>
-        <a
-          href="https://in.linkedin.com/in/jonesvinothjoseph"
-          rel="noreferrer"
-          target="_blank"
-        >
-          Contact
-        </a>
-        <a href="https://codepen.io/jo_Geek/" rel="noreferrer" target="_blank">
-          Services
-        </a>
+        </NavLink>
       </div>
     </div>
   );
